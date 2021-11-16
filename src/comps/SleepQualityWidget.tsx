@@ -26,7 +26,8 @@ export default function SleepQualityWidget() {
   const isSubmitButtonEnabled =
     durationInBed && durationAsleep && !isSubmitting;
 
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
     setError(null);
     setIsSubmitting(true);
     setSleepScore(0);

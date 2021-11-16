@@ -1,5 +1,9 @@
 @tailwind base;
 
+body {
+  @apply bg-gradient-to-br from-blue-100 to-blue-300 min-h-screen
+}
+
 a {
   @apply text-blue-700;
 }
@@ -34,6 +38,6 @@ a:hover {
   }
 
   .bh-btn {
-    @apply px-12 py-2 my-6 rounded-lg shadow-lg bg-blue-700 text-white text-lg tracking-wider font-semibold text-center mx-auto w-full md:w-1/2 disabled:bg-gray-400 disabled:opacity-60 opacity-100;
+    @apply px-12 py-2 my-6 rounded-lg shadow-lg bg-blue-700 text-white text-lg tracking-wider font-semibold text-center mx-auto w-full md:w-1/2 disabled:bg-gray-400 disabled:opacity-60 opacity-100 hover:bg-opacity-90 transition-all duration-300 hover:bg-blue-600;
   }
 }
