@@ -1,0 +1,39 @@
+@tailwind base;
+
+a {
+  @apply text-blue-700;
+}
+
+a:hover {
+  @apply border-b-2 border-blue-700;
+}
+
+@tailwind components;
+
+@tailwind utilities;
+
+.content p {
+  @apply my-6;
+}
+
+.content ul {
+  @apply my-6;
+}
+
+@layer components {
+  .bh-select {
+    @apply rounded-lg focus:outline-none focus:border-blue-600 focus:ring-1 focus:ring-blue-600 bg-blue-100 border-none text-blue-600 font-semibold fill-current;
+  }
+
+  .bh-label {
+    @apply text-blue-600 font-bold text-base mb-1;
+  }
+
+  .bh-form-field {
+    @apply flex flex-col py-2 w-full md:w-1/2 md:inline-flex md:px-4;
+  }
+
+  .bh-btn {
+    @apply px-12 py-2 my-6 rounded-lg shadow-lg bg-blue-700 text-white text-lg tracking-wider font-semibold text-center mx-auto w-full md:w-1/2 disabled:bg-gray-400 disabled:opacity-60 opacity-100;
+  }
+}
