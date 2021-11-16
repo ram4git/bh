@@ -16,5 +16,5 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
         .status(400)
         .json({ error: 'Invalid Route', errorMsg: 'Invalid request payload.' });
     }
-  }, 2000);
+  }, 1500);
 }

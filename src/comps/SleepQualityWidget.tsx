@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { SyntheticEvent, useState } from 'react';
 
 import { SleepDurationOptions } from '../utils';
 
@@ -26,7 +26,7 @@ export default function SleepQualityWidget() {
   const isSubmitButtonEnabled =
     durationInBed && durationAsleep && !isSubmitting;
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: SyntheticEvent) => {
     e.preventDefault();
     setError(null);
     setIsSubmitting(true);
